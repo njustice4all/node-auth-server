@@ -1,4 +1,5 @@
 import AuthModel from './auth-model';
+import { authLocal } from './passport';
 
 class AuthServices {
   // create user
@@ -16,6 +17,10 @@ class AuthServices {
     } catch (error) {
       throw error;
     }
+  };
+
+  loginMiddleware = (req, res, next) => {
+    return authLocal(req, res, next);
   };
 }
 

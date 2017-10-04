@@ -42,7 +42,7 @@ AuthSchema.pre('save', function (next) {
   return next();
 });
 
-// add custom methods
+// add custom methods (static)
 AuthSchema.methods = {
   _hashPassword(password) {
     return hashSync(password);
