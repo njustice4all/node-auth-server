@@ -15,6 +15,12 @@
       {
         "useBuiltIns": true
       }
+    ],
+    [
+      "transform-class-properties",
+      {
+        "spec": true
+      }
     ]
   ]
 }
